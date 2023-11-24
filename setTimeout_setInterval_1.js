@@ -1,6 +1,5 @@
 // Utilizza setInterval per chiamare la funzione "visualizzaOrologio" ogni secondo.
 
-
 function visualizzaOrologio() {
   const orarioCorrente = new Date();
   const ore = orarioCorrente.getHours();

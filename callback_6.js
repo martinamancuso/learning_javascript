@@ -7,14 +7,10 @@ come il recupero dei dati da un'API.
 - Utilizzare setTimeout per simulare il ritardo dell'operazione.
 */
 
-const object = { name: "John", age: 30 };
-
-let data;
-
 function fetchDataFromAPI(callback) {
-  data = {...object};
+  const object = { name: "John", age: 30 };
   setTimeout(() => {
-    callback(data);
+    callback(object);
   }, 2000);
 }
 

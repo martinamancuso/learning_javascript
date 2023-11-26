@@ -8,11 +8,9 @@ Ad esempio, puoi creare una funzione per aggiungere due numeri
 e passare una funzione di callback che visualizza il risultato.
 */
 
-let result;
-
 function performOperation(a, b, callback) {
- result = a + b;
- callback(result);
+ const sum = a + b;
+ callback(sum);
 }
 
 function displayResult(result) {

@@ -5,19 +5,6 @@ utilizzando Promises per una migliore gestione degli errori.
 La promise dovrebbe risolversi con i dati e rifiutare con un messaggio di errore.
 */
 
-// function fetchDataFromAPI(callback) {
-//   const object = { name: "John", age: 30 };
-//   setTimeout(() => {
-//     callback(object);
-//   }, 2000);
-// }
-
-// function handleData(data) {
-//   console.log(data);
-// }
-
-// fetchDataFromAPI(handleData);
-
 function fetchDataFromAPI(ok) {
   const object = { name: "John", age: 30 };
   return new Promise((resolve, reject) => {

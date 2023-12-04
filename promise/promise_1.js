@@ -18,7 +18,7 @@ function fetchDataFromAPI(ok) {
   });
 }
 
-fetchDataFromAPI(false).then(person => {
+fetchDataFromAPI(true).then(person => {
   console.log(person);
 }).catch(error => {
   console.log(error);
